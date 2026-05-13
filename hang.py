@@ -22,5 +22,15 @@ hangman_art={0:("   ",
                 "/|\\ ",
                 "/ \\")}
 #print(hangman_art[6])
-for line in hangman_art[6]:
-    print(line)
+#for line in hangman_art[6]:
+ #   print(line)
+def display_man(wrg_gss):
+    pass
+def display_hint(hint):
+    pass
+def display_answer(answer):
+    pass
+def main():
+    pass
+if __name__=="__main__":
+    main()
