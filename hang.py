@@ -21,4 +21,6 @@ hangman_art={0:("   ",
              6:(" o ",
                 "/|\\ ",
                 "/ \\")}
-print(hangman_art[6])
+#print(hangman_art[6])
+for line in hangman_art[6]:
+    print(line)
