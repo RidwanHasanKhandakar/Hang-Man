@@ -1,5 +1,5 @@
 import random
-words=("apple" "banana" "cherry" "date" "elderberry" "fig" "grape" "honeydew")
+words=("apple","banana","cherry","date","elderberry","fig","grape","honeydew")
 hangman_art={0:("   ",
                 "   ",
                 "   "), 
@@ -31,6 +31,8 @@ def display_hint(hint):
 def display_answer(answer):
     pass
 def main():
-    pass
+    answer = random.choice(words)
+    hint = ["_"]*len(answer)
+    print(hint)
 if __name__=="__main__":
     main()
