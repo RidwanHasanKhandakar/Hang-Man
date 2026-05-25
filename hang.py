@@ -25,14 +25,26 @@ hangman_art={0:("   ",
 #for line in hangman_art[6]:
  #   print(line)
 def display_man(wrg_gss):
-    pass
+    print("*********")
+    for line in hangman_art[wrg_gss]:
+        print(line)
+    print("*********")
 def display_hint(hint):
-    pass
+    print(" ".join(hint))
 def display_answer(answer):
     pass
 def main():
     answer = random.choice(words)
     hint = ["_"]*len(answer)
-    print(hint)
+    #print(hint)
+    wrg_gsses=0
+    gssed_letters=set()
+    is_running = True
+    while is_running:
+        display_man(wrg_gsses)
+        display_hint(hint)
+        guess=input("Enter a letter: ").lower()
+
+
 if __name__=="__main__":
     main()
